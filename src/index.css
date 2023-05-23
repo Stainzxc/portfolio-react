@@ -10,7 +10,7 @@
     }
     li {
         @apply px-4;
-        @apply cursor-pointer
+        @apply cursor-pointer;
     }
 }
 
@@ -27,4 +27,4 @@
     rgba(112, 157, 255, 0.8),
     hsla(242, 74%, 61%, 0.8)
     )!important;
-};
+}
