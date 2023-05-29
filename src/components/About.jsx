@@ -18,7 +18,7 @@ export default function About() {
               <img src={profile} alt="profile-picture" className="rounded-md border-2 text-right border-[#66FCF1]"/>
             </div>
             <div>
-              <p className="text-2xl">
+              <p className="text-xl">
                 I am a passionate and dedicated frontend developer with a strong
                 focus on creating user-friendly and visually appealing web
                 experiences. I thrive in collaborative environments and enjoy

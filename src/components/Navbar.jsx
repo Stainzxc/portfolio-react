@@ -19,14 +19,14 @@ export default function Navbar() {
       </div>
 
       {/* menu */}
-      <ul className="md:flex hidden px-8">
+      <ul className="md:flex hidden px-8 font-[Raleway] text-lg">
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" className="" smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="about" className="" smooth={true} duration={500}>
             About
           </Link>
         </li>
