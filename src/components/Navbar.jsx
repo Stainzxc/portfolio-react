@@ -11,7 +11,7 @@ export default function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center text-[#C5C6C7] bg-[#0B0C10] ">
+    <div className="fixed w-full h-[80px] flex justify-between items-center text-[#C5C6C7] bg-[#0B0C10]">
       <div className="cursor-pointer" >
       <Link to="home" smooth={true} duration={500}>
         <img src={logo} alt="logo" style={{ width: "80px" }} />

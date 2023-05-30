@@ -13,9 +13,9 @@ export default function About() {
           </div>
           <div></div>
           </div>
-          <div className="max-w-[1000px] w-full sm:grid grid-cols-2 gap-8 px-4">
-            <div className="text-4xl font-bold py-2">
-              <img src={profile} alt="profile-picture" className="rounded-md border-2 text-right border-[#66FCF1]"/>
+          <div className="max-w-[800px] w-full sm:grid grid-cols-2 gap-8 px-4">
+            <div className="text-4xl font-bold py-2 flex">
+              <img src={profile} alt="profile-picture" className="rounded-md grow text-right shadow-md shadow-[#66FCF1]"/>
             </div>
             <div>
               <p className="text-xl">

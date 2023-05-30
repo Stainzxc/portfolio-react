@@ -11,8 +11,8 @@ export default function Skills() {
   return (
     <div name="skills" className="w-full h-screen bg-[#0B0C10] text-[#C5C6C7]">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto flex flex-col justify-center p-4 w-full h-full">
-        <div className="pb-8">
+      <div className=" mx-auto max-w-[1000px] flex flex-col justify-center p-4 w-full h-full">
+        <div className="pb-8 ">
           <p className="text-4xl font-bold inline border-b-4 border-[#66FCF1]">
             Skills
           </p>
@@ -21,43 +21,43 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
-          <Slide duration={1000} delay={500}>
-          <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
+        <div className="max-w-[1000px] w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
+          {/* <Slide duration={1000} delay={500}> */}
+          <div className="shadow-md shadow-[#66FCF1] hover:scale-110 duration-500">
             <img src={html} alt="html" className="w-20 mx-auto" />
             <p className="my-4">HTML</p>
           </div>
-          </Slide>
-          <Slide duration={500} delay={400}>
-          <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
+          {/* </Slide>
+          <Slide duration={500} delay={400}> */}
+          <div className="shadow-md shadow-[#66FCF1] hover:scale-110 duration-500">
             <img src={css} alt="css" className="w-20 mx-auto" />
             <p className="my-4">CSS</p>
           </div>
-          </Slide>
-          <Slide sm:duration={100} delay={300}>
-          <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
+          {/* </Slide>
+          <Slide sm:duration={100} delay={300}> */}
+          <div className="shadow-md shadow-[#66FCF1] hover:scale-110 duration-500">
             <img src={javascript} alt="javascript" className="w-20 mx-auto" />
             <p className="my-4">JAVASCRIPT</p>
           </div>
-          </Slide>
-          <Slide duration={1000} delay={500}>
-          <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
+          {/* </Slide>
+          <Slide duration={1000} delay={500}> */}
+          <div className="shadow-md shadow-[#66FCF1] hover:scale-110 duration-500">
             <img src={tailwind} alt="tailwind" className="w-20 mx-auto" />
             <p className="my-4">TAILWIND</p>
           </div>
-          </Slide>
-          <Slide duration={500} delay={400}>
-          <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
+          {/* </Slide>
+          <Slide duration={500} delay={400}> */}
+          <div className="shadow-md shadow-[#66FCF1] hover:scale-110 duration-500">
             <img src={react} alt="react" className="w-20 mx-auto" />
             <p className="my-4">REACT</p>
           </div>
-          </Slide>
-          <Slide sm:duration={100} delay={300}>
-          <div className="shadow-md shadow-[#0a192f] hover:scale-110 duration-500">
+          {/* </Slide>
+          <Slide sm:duration={100} delay={300}> */}
+          <div className="shadow-md shadow-[#66FCF1] hover:scale-110 duration-500">
             <img src={github} alt="github" className="w-20 mx-auto" />
             <p className="my-4">Github</p>
           </div>
-          </Slide>
+          {/* </Slide> */}
         </div>
       </div>
     </div>
