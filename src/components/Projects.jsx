@@ -27,24 +27,24 @@ export default function Projects() {
           {/* <Slide duration={1000} delay={300}> */}
           <div
             style={{ backgroundImage: `url(${talipaapp})` }}
-            className=" group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-110 duration-500"
+            className=" group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-90 duration-500"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100 mx-2">
-              <span className=" text-white tracking-wider">
+              <span className="md:text-lg text-sm text-white tracking-wider">
                 This is our Capstone Project or Thesis. In this project are aim
                 is to remove the middlemen between the Vendor and Farmer in
                 their transaction therefore the farmer can earn more.
               </span>
               <div className="pt-8 text-center">
-                <span className="text-lg font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
                   ReactJS
                 </span>
-                <span className="text-lg font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-20">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-20">
                   Tailwind
                 </span>
                 <a href="https://www.talipaapp.com/" target="_blank">
-                  <button className="text-lg font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
+                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
                     Demo
                   </button>
                 </a>
@@ -52,7 +52,7 @@ export default function Projects() {
                   href="https://github.com/saisarah/TalipaAPP-Frontend"
                   target="_blank"
                 >
-                  <button className="text-lg font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
+                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
                     Code
                   </button>
                 </a>
@@ -65,23 +65,23 @@ export default function Projects() {
 
           <div
             style={{ backgroundImage: `url(${sneakers})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-110 duration-500"
+            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-90 duration-500"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100 w-full mx-2 ">
-              <span className="text-white">
+              <span className="md:text-lg text-sm text-white">
                 I made this because I am practicing my knowledge in React JS and
                 Tailwind CSS. This is not functionable e-commerse website.{" "}
               </span>
               <div className="pt-8 text-center">
-                <span className="text-lg font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
                   ReactJS
                 </span>
-                <span className="text-lg font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-20">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-20">
                   Tailwind
                 </span>
                 <a href="https://e-commerse-sepia.vercel.app/ " target="_blank">
-                  <button className="text-lg font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
+                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
                     Demo
                   </button>
                 </a>
@@ -89,7 +89,7 @@ export default function Projects() {
                   href="https://github.com/Stainzxc/e-commerse"
                   target="_blank"
                 >
-                  <button className="text-lg font-bold tracking-wide bg-white text-gray-700 rounded-md p-2">
+                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2">
                     Code
                   </button>
                 </a>
@@ -101,30 +101,30 @@ export default function Projects() {
           {/* <Slide duration={100} delay={100}> */}
           <div
             style={{ backgroundImage: `url(${ams})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-110 duration-500"
+            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-90 duration-500"
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100 mx-2">
-              <span className="text-white">
+              <span className="md:text-lg text-sm text-white">
                 This one is our Thesis when we are third year college. We made
                 this to help the alumnus about their concerns therefore they can
                 make apppointment to the MIS.{" "}
               </span>
               <div className="pt-8 text-center">
-                <span className="text-lg font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
                   HTML
                 </span>
-                <span className="text-lg font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
                   CSS
                 </span>
-                <span className="text-lg font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-20">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-20">
                   JavaScript
                 </span>
                 <a
                   href=" http://ucc-ams.epizy.com/?i=1&fbclid=IwAR2Dw9bzt5zdBS5upT52eMliTCL3AMT5UYBgVxC0HAw7klUfjZld58dX3xI"
                   target="_blank"
                 >
-                  <button className="text-lg font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
+                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
                     Demo
                   </button>
                 </a>
