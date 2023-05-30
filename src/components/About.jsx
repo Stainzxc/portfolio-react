@@ -6,19 +6,19 @@ export default function About() {
     <div name="about" className="w-full h-screen bg-[#0B0C10] text-[#C5C6C7]">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className="sm:text-right pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-[#66FCF1]">
+          <div className="sm:text-right py-2 pl-4">
+            <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-[#66FCF1]">
               About
             </p>
           </div>
           <div></div>
           </div>
-          <div className="max-w-[800px] w-full sm:grid grid-cols-2 gap-8 px-4">
+          <div className="max-w-[800px] mx-auto w-full sm:grid grid-cols-2 gap-8 px-4">
             <div className="text-4xl font-bold py-2 flex">
               <img src={profile} alt="profile-picture" className="rounded-md w-[300px] mx-auto md:w-full text-right shadow-md shadow-[#66FCF1]"/>
             </div>
             <div>
-              <p className="text-sm md:text-xl">
+              <p className="text-sm md:text-xl mx-16 md:mx-auto">
                 I am a passionate and dedicated frontend developer with a strong
                 focus on creating user-friendly and visually appealing web
                 experiences. I thrive in collaborative environments and enjoy

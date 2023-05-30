@@ -11,11 +11,11 @@ export default function Projects() {
       className="w-full h-screen bg-[#0B0C10] text-[#C5C6C7]"
     >
       <div className="mx-auto max-w-[1700px] p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-[#66FCF1]">
+        <div className="pt-2">
+          <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-[#66FCF1]">
             Projects
           </p>
-          <p className="py-4 text-xl">
+          <p className="py-2 text-sm md:text-xl">
             This is some projects that I involved as a Frontend developer and
             the other project like Sneaker is my practice project.
           </p>

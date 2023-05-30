@@ -7,11 +7,11 @@ export default function Contact() {
       className="w-full h-screen bg-[#0B0C10] flex justify-center items-center p-4 "
     >
       <form method="POST" action="https://getform.io/f/80f29602-2c74-4e7b-92f4-3674f78912fe" className="flex flex-col max-w-[700px] w-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-[#66FCF1] text-[#C5C6C7] ">
+        <div className="pt-2">
+          <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-[#66FCF1] text-[#C5C6C7] ">
             Contact
           </p>
-          <p className="py-4 text-[#C5C6C7] text-xl">
+          <p className="py-2 text-[#C5C6C7] text-sm md:text-xl">
             Submit the form below or email me at almonia.ruel.bscs2019@gmail.com
           </p>
         </div>
