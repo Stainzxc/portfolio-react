@@ -12,7 +12,7 @@ export default function Skills() {
     <div name="skills" className="w-full h-screen bg-[#0B0C10] text-[#C5C6C7]">
       {/* Container */}
       <div className=" mx-auto max-w-[1000px] flex flex-col justify-center p-4 w-full h-full">
-        <div className="pb-8 ">
+        <div className="">
           <p className="text-4xl font-bold inline border-b-4 border-[#66FCF1]">
             Skills
           </p>
