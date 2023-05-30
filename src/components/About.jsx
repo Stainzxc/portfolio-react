@@ -15,10 +15,10 @@ export default function About() {
           </div>
           <div className="max-w-[800px] w-full sm:grid grid-cols-2 gap-8 px-4">
             <div className="text-4xl font-bold py-2 flex">
-              <img src={profile} alt="profile-picture" className="rounded-md grow text-right shadow-md shadow-[#66FCF1]"/>
+              <img src={profile} alt="profile-picture" className="rounded-md w-[300px] mx-auto md:w-full text-right shadow-md shadow-[#66FCF1]"/>
             </div>
             <div>
-              <p className="text-xl">
+              <p className="text-sm md:text-xl">
                 I am a passionate and dedicated frontend developer with a strong
                 focus on creating user-friendly and visually appealing web
                 experiences. I thrive in collaborative environments and enjoy
