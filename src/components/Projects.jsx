@@ -117,7 +117,7 @@ export default function Projects() {
                 <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
                   CSS
                 </span>
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-4 md:mr-20">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2 md:mr-20">
                   JavaScript
                 </span>
                 <a
@@ -129,7 +129,7 @@ export default function Projects() {
                   </button>
                 </a>
                 <a href="https://github.com/Stainzxc/AMS" target="_blank">
-                  <button className="text-lg font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
+                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2">
                     Code
                   </button>
                 </a>
