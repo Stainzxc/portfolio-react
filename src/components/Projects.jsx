@@ -40,7 +40,7 @@ export default function Projects() {
                 <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
                   ReactJS
                 </span>
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-20">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-10 md:mr-20">
                   Tailwind
                 </span>
                 <a href="https://www.talipaapp.com/" target="_blank">
@@ -77,7 +77,7 @@ export default function Projects() {
                 <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
                   ReactJS
                 </span>
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-20">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-10 md:mr-20">
                   Tailwind
                 </span>
                 <a href="https://e-commerse-sepia.vercel.app/ " target="_blank">
@@ -117,7 +117,7 @@ export default function Projects() {
                 <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
                   CSS
                 </span>
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-20">
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-10 md:mr-20">
                   JavaScript
                 </span>
                 <a
