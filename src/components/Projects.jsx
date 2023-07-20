@@ -17,7 +17,7 @@ export default function Projects() {
             Projects
           </p>
           <p className="py-2 text-sm md:text-xl">
-            This is some projects that I involved as a Frontend developer and
+            This is some projects that I involved as a Frontend Developer/Web Developer and
             the other project like Sneaker is my practice project.
           </p>
         </div>

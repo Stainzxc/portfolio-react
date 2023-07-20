@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/img/profile.jpg"
+import profile from "../assets/img/profile.jpg";
 
 export default function About() {
   return (
@@ -12,25 +12,28 @@ export default function About() {
             </p>
           </div>
           <div></div>
+        </div>
+        <div className="max-w-[800px] mx-auto w-full sm:grid grid-cols-2 gap-8 px-4">
+          <div className="text-4xl font-bold py-4 flex">
+            <img
+              src={profile}
+              alt="profile-picture"
+              className="rounded-md w-[300px] mx-auto md:w-full text-right shadow-md shadow-[#66FCF1]"
+            />
           </div>
-          <div className="max-w-[800px] mx-auto w-full sm:grid grid-cols-2 gap-8 px-4">
-            <div className="text-4xl font-bold py-4 flex">
-              <img src={profile} alt="profile-picture" className="rounded-md w-[300px] mx-auto md:w-full text-right shadow-md shadow-[#66FCF1]"/>
-            </div>
-            <div>
-              <p className="text-sm md:text-xl mx-10 md:mx-auto">
-                I am a passionate and dedicated frontend developer with a strong
-                focus on creating user-friendly and visually appealing web
-                experiences. I thrive in collaborative environments and enjoy
-                working closely with designers and back-end developers to bring
-                ideas to life. With a keen eye for detail and a deep
-                understanding of HTML, CSS, and JavaScript, I aim to build
-                responsive and accessible websites that leave a lasting
-                impression.
-              </p>
-            </div>
+          <div>
+            <p className="text-sm md:text-xl mx-10 md:mx-auto">
+              I am a passionate and dedicated web developer with a strong focus
+              on creating user-friendly and visually appealing web experiences.
+              I thrive in collaborative environments and enjoy working closely
+              with designers and back-end developers to bring ideas to life.
+              With a keen eye for detail and a deep understanding of HTML, CSS,
+              and JavaScript, I aim to build responsive and accessible websites
+              that leave a lasting impression.
+            </p>
           </div>
         </div>
       </div>
+    </div>
   );
 }
