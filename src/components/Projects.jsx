@@ -2,6 +2,7 @@ import React from "react";
 import talipaapp from "../assets/img/talipaapp.png";
 import sneakers from "../assets/img/sneakers.png";
 import ams from "../assets/img/ams.png";
+import netflix from "../assets/img/netflix.png";
 import { Slide } from "react-awesome-reveal";
 
 export default function Projects() {
@@ -22,7 +23,7 @@ export default function Projects() {
         </div>
 
         {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-10">
           {/* Grid Item */}
           {/* <Slide duration={1000} delay={300}> */}
           <div
@@ -129,6 +130,39 @@ export default function Projects() {
                   </button>
                 </a>
                 <a href="https://github.com/Stainzxc/AMS" target="_blank">
+                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{ backgroundImage: `url(${netflix})` }}
+            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-90 duration-500"
+          >
+            {/* Hover Effects */}
+            <div className="opacity-0 group-hover:opacity-100 mx-2">
+              <span className="md:text-lg text-sm text-white">
+                This one is I try to clone the User Inteface of Netflix from Registration and Login to Dashboard using Tailwind CSS and React JS.{" "}
+              </span>
+              <div className="pt-8 text-center">
+                
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
+                 Tailwind CSS
+                </span>
+                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2 md:mr-20">
+                  React JS
+                </span>
+                <a
+                  href="https://netflixclone-blush.vercel.app/"
+                  target="_blank"
+                >
+                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://github.com/Stainzxc/netflixclone" target="_blank">
                   <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2">
                     Code
                   </button>
