@@ -14,7 +14,7 @@ export default function Hero() {
           I'm a Web Developer
         </h2>
         <p className="text-[#C5C6C7] py-4 max-w-[700px] text-xl">
-          Front-end developer with a passion for building interesting and
+          Web developer with a passion for building interesting and
           user-friendly web interfaces. Highly driven and committed. Have the
           eagerness to learn more, especially in web development.
         </p>
