@@ -3,17 +3,17 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 export default function Hero() {
   return (
-    <div name="home" className="w-full h-screen bg-[#0B0C10]">
+    <div name="home" className="w-full h-screen bg-[#0B0C10] font-poppins">
       {/* container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="text-[#66FCF1] text-2xl sm:text-4xl">Hello, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
+      <div className="max-w-[1500px] mx-auto px-8 flex flex-col justify-center h-full">
+        <p className="text-white mt-4 text-xl sm:text-4xl font-bold">Hello, It's Me</p>
+        <h1 className="text-4xl my-4 sm:text-6xl font-bold text-white">
           Ruel Almonia
         </h1>
-        <h2 className="text-4xl sm:text-7xl font-bold text-[#45A29E]">
-          I'm a Web Developer
+        <h2 className="text-4xl sm:text-4xl font-bold text-white">
+          And I'm a <span className="text-[#66FCF1]">Web Developer</span>
         </h2>
-        <p className="text-[#C5C6C7] py-4 max-w-[700px] text-xl">
+        <p className="text-[#C5C6C7] py-4 max-w-[700px] text-lg font-light">
           Web developer with a passion for building interesting and
           user-friendly web interfaces. Highly driven and committed. Have the
           eagerness to learn more, especially in web development.

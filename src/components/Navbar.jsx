@@ -10,38 +10,73 @@ import { Link } from "react-scroll";
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleColor = () => {
+    setIsActive(!isActive);
+  };
+
+  const textStyle = {
+    color: isActive ? "#66FCF1" : "white", // Change 'red' to your desired color
+    cursor: "pointer",
+  };
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center text-[#C5C6C7] bg-[#0B0C10]">
-      <div className="cursor-pointer" >
-      <Link to="home" smooth={true} duration={500}>
-        <img src={logo} alt="logo" style={{ width: "80px" }} />
+      <div className="cursor-pointer">
+        <Link to="home" smooth={true} duration={500}>
+          <h1 className="font-poppins font-bold text-2xl px-8 text-[#66FCF1]">Ruel Almonia.</h1>
         </Link>
       </div>
 
       {/* menu */}
-      <ul className="md:flex hidden px-8 font-[Raleway] text-lg">
+      <ul className="md:flex hidden px-8 font-poppins font-semibold text-lg ">
         <li>
-          <Link to="home" className="" smooth={true} duration={500}>
+          <Link
+            to="home"
+            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
+            smooth={true}
+            duration={500}
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" className="" smooth={true} duration={500}>
+          <Link
+            to="about"
+            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
+            smooth={true}
+            duration={500}
+          >
             About
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500}>
+          <Link
+            to="skills"
+            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
+            smooth={true}
+            duration={500}
+          >
             Skills
           </Link>
         </li>
         <li>
-          <Link to="projects" smooth={true} duration={500}>
+          <Link
+            to="projects"
+            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
+            smooth={true}
+            duration={500}
+          >
             Projects
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500}>
+          <Link
+            to="contact"
+            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
+            smooth={true}
+            duration={500}
+          >
             Contact
           </Link>
         </li>
