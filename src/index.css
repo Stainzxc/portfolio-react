@@ -25,3 +25,51 @@
     hsla(189, 100%, 50%, 0.8)
     )!important;
 }
+
+.projects-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #66FCF1 #1F2833;
+}
+
+.projects-scroll::-webkit-scrollbar {
+    height: 10px;
+}
+
+.projects-scroll::-webkit-scrollbar-track {
+    background: #1F2833;
+    border-radius: 999px;
+}
+
+.projects-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #66FCF1, #45A29E);
+    border-radius: 999px;
+}
+
+.project-card {
+    transition: transform 320ms ease, box-shadow 320ms ease;
+    animation: card-rise 650ms ease both;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(12, 200, 190, 0.2);
+}
+
+.project-image {
+    transition: transform 350ms ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.04);
+}
+
+@keyframes card-rise {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -3,175 +3,129 @@ import talipaapp from "../assets/img/talipaapp.png";
 import sneakers from "../assets/img/sneakers.png";
 import ams from "../assets/img/ams.png";
 import netflix from "../assets/img/netflix.png";
-import { Slide } from "react-awesome-reveal";
+import swift from "../assets/img/swift.png";
+import { Fade } from "react-awesome-reveal";
+
+const projects = [
+  {
+    id: "talipa",
+    image: talipaapp,
+    tag: ["React.js", " , ", "Tailwind ", " & ", "Laravel"],
+    title: "Talipa App",
+    description:
+      "Capstone marketplace platform built to reduce middlemen between vendors and farmers for better transaction outcomes.",
+    liveUrl: "https://www.talipaapp.com/",
+    codeUrl: "https://github.com/saisarah/TalipaAPP-Frontend",
+  },
+  {
+    id: "sneakers",
+    image: sneakers,
+    tag: ["React.js", " & ", "Tailwind"],
+    title: "Sneakers",
+    description:
+      "Practice e-commerce UI project focused on component structure, responsive layout, and Tailwind workflow.",
+    liveUrl: "https://e-commerse-sepia.vercel.app/",
+    codeUrl: "https://github.com/Stainzxc/e-commerse",
+  },
+  {
+    id: "ams",
+    image: ams,
+    tag: ["JavaScript", " & ", "PHP"],
+    title: "AMS",
+    description:
+      "Alumni management thesis project that helps graduates coordinate concerns and schedule MIS appointments.",
+    liveUrl:
+      "http://ucc-ams.epizy.com/?i=1&fbclid=IwAR2Dw9bzt5zdBS5upT52eMliTCL3AMT5UYBgVxC0HAw7klUfjZld58dX3xI",
+    codeUrl: "https://github.com/Stainzxc/AMS",
+  },
+  {
+    id: "netflix",
+    image: netflix,
+    tag: ["React.js", " & ", "Tailwind"],
+    title: "Netflix Clone",
+    description:
+      "UI clone from registration and login through dashboard screens using React and Tailwind CSS.",
+    liveUrl: "https://netflixclone-blush.vercel.app/",
+    codeUrl: "https://github.com/Stainzxc/netflixclone",
+  },
+  {
+    id: "swift-soles",
+    image: swift,
+    tag: ["HTML", " , ", "CSS", " & ", "JavaScript"],
+    title: "Swift Soles",
+    description:
+      "A fundamentals practice project where I built a responsive shoe-store interface using HTML, CSS, and JavaScript to strengthen my core web development skills.",
+    liveUrl: "https://swift-soles.vercel.app/",
+    codeUrl: "https://github.com/Stainzxc/Swift-Soles",
+  },
+];
 
 export default function Projects() {
   return (
     <div
       name="projects"
-      className="w-full h-screen bg-[#0B0C10] text-[#C5C6C7]"
+      className="w-full min-h-screen bg-[#0B0C10] text-[#C5C6C7] py-14"
     >
-      <div className="mx-auto max-w-[1700px] p-4 flex flex-col justify-center w-full h-full">
+      <div className="mx-auto max-w-[1700px] p-4 md:p-8 flex flex-col justify-center w-full h-full">
         <div className="pt-2">
           <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-[#66FCF1]">
             Projects
           </p>
           <p className="py-2 text-sm md:text-xl">
-            This is some projects that I involved as a Frontend Developer/Web Developer and
-            the other project like Sneaker is my practice project.
+            Scroll horizontally to explore selected work and live demos.
           </p>
         </div>
 
-        {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-10">
-          {/* Grid Item */}
-          {/* <Slide duration={1000} delay={300}> */}
-          <div
-            style={{ backgroundImage: `url(${talipaapp})` }}
-            className=" group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-90 duration-500"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 mx-2">
-              <span className="md:text-lg text-sm text-white tracking-wider">
-                This is our Capstone Project or Thesis. In this project are aim
-                is to remove the middlemen between the Vendor and Farmer in
-                their transaction therefore the farmer can earn more.
-              </span>
-              <div className="pt-8 text-center">
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
-                  ReactJS
-                </span>
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-10 md:mr-20">
-                  Tailwind
-                </span>
-                <a href="https://www.talipaapp.com/" target="_blank">
-                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
-                    Demo
-                  </button>
-                </a>
-                <a
-                  href="https://github.com/saisarah/TalipaAPP-Frontend"
-                  target="_blank"
-                >
-                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
+        <Fade cascade damping={0.12} triggerOnce>
+          <div className="projects-scroll mt-4 flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory">
+            {projects.map((project) => (
+              <article
+                key={project.id}
+                className="project-card group min-w-[320px] md:min-w-[560px] lg:min-w-[760px] snap-start rounded-xl border border-[#1F2833] bg-[#111318] shadow-md shadow-[#0f1013]"
+              >
+                <div className="relative overflow-hidden rounded-t-xl bg-[#DBE6E0] p-4 md:p-6">
+                  <span className="absolute left-3 top-3 z-10 rounded-full bg-[#7c7e88] px-3 py-1 text-xs text-[#101217]">
+                    {project.tag}
+                  </span>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-[180px] w-full rounded-lg object-cover object-top md:h-[280px] project-image"
+                  />
+                </div>
+                <div className="space-y-4 p-5 md:p-7">
+                  <h3 className="text-2xl font-semibold text-[#1dd877]">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-[#9EA3B0] md:text-xl">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-full bg-[#1dd877] px-5 py-2 text-sm font-semibold text-[#0B0C10] transition-all duration-300 hover:shadow-[0_0_20px_rgba(29,216,119,0.45)]"
+                    >
+                      Live
+                    </a>
+                    <a
+                      href={project.codeUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-full border border-[#66FCF1] px-5 py-2 text-sm font-semibold text-[#66FCF1] transition-all duration-300 hover:bg-[#66FCF1] hover:text-[#0B0C10]"
+                    >
+                      Code
+                    </a>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
-          {/* </Slide> */}
-          {/* Grid Item */}
-          {/* <Slide duration={500} delay={200}> */}
-
-          <div
-            style={{ backgroundImage: `url(${sneakers})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-90 duration-500"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 w-full mx-2 ">
-              <span className="md:text-lg text-sm text-white">
-                I made this because I am practicing my knowledge in React JS and
-                Tailwind CSS. This is not functionable e-commerse website.{" "}
-              </span>
-              <div className="pt-8 text-center">
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
-                  ReactJS
-                </span>
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-10 md:mr-20">
-                  Tailwind
-                </span>
-                <a href="https://e-commerse-sepia.vercel.app/ " target="_blank">
-                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
-                    Demo
-                  </button>
-                </a>
-                <a
-                  href="https://github.com/Stainzxc/e-commerse"
-                  target="_blank"
-                >
-                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* </Slide> */}
-          {/* Grid Item */}
-          {/* <Slide duration={100} delay={100}> */}
-          <div
-            style={{ backgroundImage: `url(${ams})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-90 duration-500"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 mx-2">
-              <span className="md:text-lg text-sm text-white">
-                This one is our Thesis when we are third year college. We made
-                this to help the alumnus about their concerns therefore they can
-                make apppointment to the MIS.{" "}
-              </span>
-              <div className="pt-8 text-center">
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
-                  HTML
-                </span>
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
-                  CSS
-                </span>
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2 md:mr-20">
-                  JavaScript
-                </span>
-                <a
-                  href=" http://ucc-ams.epizy.com/?i=1&fbclid=IwAR2Dw9bzt5zdBS5upT52eMliTCL3AMT5UYBgVxC0HAw7klUfjZld58dX3xI"
-                  target="_blank"
-                >
-                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/Stainzxc/AMS" target="_blank">
-                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            style={{ backgroundImage: `url(${netflix})` }}
-            className="group container rounded-md flex justify-center items-center mx-auto content-div shadow-md shadow-[#66FCF1] hover:scale-90 duration-500"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100 mx-2">
-              <span className="md:text-lg text-sm text-white">
-                This one is I try to clone the User Inteface of Netflix from Registration and Login to Dashboard using Tailwind CSS and React JS.{" "}
-              </span>
-              <div className="pt-8 text-center">
-                
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2">
-                 Tailwind CSS
-                </span>
-                <span className="md:text-lg text-sm font-bold tracking-wide bg-[#66FCF1] text-black rounded-md p-2 mr-2 md:mr-20">
-                  React JS
-                </span>
-                <a
-                  href="https://netflixclone-blush.vercel.app/"
-                  target="_blank"
-                >
-                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2 mr-2">
-                    Demo
-                  </button>
-                </a>
-                <a href="https://github.com/Stainzxc/netflixclone" target="_blank">
-                  <button className="md:text-lg text-sm font-bold tracking-wide bg-white text-gray-700 rounded-md p-2">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* </Slide> */}
-        </div>
+        </Fade>
+        <p className="mt-2 text-xs tracking-wide text-[#6f7580] md:text-sm">
+          Tip: drag sideways or shift + mouse wheel to scroll projects.
+        </p>
       </div>
     </div>
   );

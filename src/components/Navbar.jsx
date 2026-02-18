@@ -1,25 +1,40 @@
-import React, { useState } from "react";
-import logo from "../assets/img/logo-neon.png";
+import React, { useEffect, useState } from "react";
 import iconMenu from "../assets/img/iconMenu.svg";
 import iconClose from "../assets/img/iconClose.svg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiFillFacebook } from "react-icons/ai";
-import { CgMail } from "react-icons/cg";
 import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const [isActive, setIsActive] = useState(false);
+  const [showSocialIcons, setShowSocialIcons] = useState(false);
 
-  const toggleColor = () => {
-    setIsActive(!isActive);
-  };
+  useEffect(() => {
+    const updateSocialVisibility = () => {
+      const skillsSection = document.querySelector("[name='skills']");
+      if (!skillsSection) {
+        setShowSocialIcons(false);
+        return;
+      }
 
-  const textStyle = {
-    color: isActive ? "#66FCF1" : "white", // Change 'red' to your desired color
-    cursor: "pointer",
-  };
+      const skillsTop =
+        skillsSection.getBoundingClientRect().top + window.scrollY;
+      setShowSocialIcons(window.scrollY + 120 >= skillsTop);
+    };
+
+    updateSocialVisibility();
+    window.addEventListener("scroll", updateSocialVisibility, {
+      passive: true,
+    });
+    window.addEventListener("resize", updateSocialVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", updateSocialVisibility);
+      window.removeEventListener("resize", updateSocialVisibility);
+    };
+  }, []);
+
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center text-[#C5C6C7] bg-[#0B0C10]">
       <div className="cursor-pointer">
@@ -33,29 +48,25 @@ export default function Navbar() {
         <li>
           <Link
             to="home"
-            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
+            className="hover:text-[#66FCF1] border-b-2 border-transparent pb-1"
+            activeClass="text-[#66FCF1] border-[#66FCF1]"
             smooth={true}
             duration={500}
+            spy={true}
+            offset={-90}
           >
             Home
           </Link>
         </li>
         <li>
           <Link
-            to="about"
-            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
-            smooth={true}
-            duration={500}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
             to="skills"
-            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
+            className="hover:text-[#66FCF1] border-b-2 border-transparent pb-1"
+            activeClass="text-[#66FCF1] border-[#66FCF1]"
             smooth={true}
             duration={500}
+            spy={true}
+            offset={-90}
           >
             Skills
           </Link>
@@ -63,9 +74,12 @@ export default function Navbar() {
         <li>
           <Link
             to="projects"
-            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
+            className="hover:text-[#66FCF1] border-b-2 border-transparent pb-1"
+            activeClass="text-[#66FCF1] border-[#66FCF1]"
             smooth={true}
             duration={500}
+            spy={true}
+            offset={-90}
           >
             Projects
           </Link>
@@ -73,9 +87,12 @@ export default function Navbar() {
         <li>
           <Link
             to="contact"
-            className="hover:text-[#66FCF1] active:text-[#66FCF1]"
+            className="hover:text-[#66FCF1] border-b-2 border-transparent pb-1"
+            activeClass="text-[#66FCF1] border-[#66FCF1]"
             smooth={true}
             duration={500}
+            spy={true}
+            offset={-90}
           >
             Contact
           </Link>
@@ -110,17 +127,30 @@ export default function Navbar() {
         }
       >
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+          <Link
+            onClick={handleClick}
+            to="home"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-90}
+            className="border-b-2 border-transparent pb-1"
+            activeClass="text-[#66FCF1] border-[#66FCF1]"
+          >
             Home
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+          <Link
+            onClick={handleClick}
+            to="skills"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-90}
+            className="border-b-2 border-transparent pb-1"
+            activeClass="text-[#66FCF1] border-[#66FCF1]"
+          >
             Skills
           </Link>
         </li>
@@ -130,19 +160,36 @@ export default function Navbar() {
             to="projects"
             smooth={true}
             duration={500}
+            spy={true}
+            offset={-90}
+            className="border-b-2 border-transparent pb-1"
+            activeClass="text-[#66FCF1] border-[#66FCF1]"
           >
             Projects
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+          <Link
+            onClick={handleClick}
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-90}
+            className="border-b-2 border-transparent pb-1"
+            activeClass="text-[#66FCF1] border-[#66FCF1]"
+          >
             Contact
           </Link>
         </li>
       </ul>
 
       {/*social icons*/}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div
+        className={`${
+          showSocialIcons ? "hidden lg:flex" : "hidden"
+        } fixed flex-col top-[35%] left-0`}
+      >
         <ul>
           <li className="w-[160px] h-[60px] flex justify-center items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 ">
             <a
